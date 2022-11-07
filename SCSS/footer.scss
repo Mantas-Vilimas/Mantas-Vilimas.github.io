@@ -1,0 +1,116 @@
+.footer {
+
+    &__text {
+        margin: 32px 0;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        color: $dark2;
+    }
+
+    &__header {
+        flex: 1;
+    }
+
+    &__bottom--right {
+        display: none;
+    }
+
+    &__bottom{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        color:  $dark4;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 74px;
+        margin: 0 38px 0 0;
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        min-width: 110px;
+    }
+
+    &__heading {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $dark2;
+        margin: 28px 0;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        color: $dark2;
+        text-decoration: none;
+        padding: 5px 0;
+    }
+
+    &__list-item {
+        margin: 20px 0;
+    }
+}
+
+
+.social-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+    
+    &__item {
+        background: $dark4;
+        width: 18px;
+        height: 18px;
+    }
+
+    &__item--facebook {
+        mask: url(/assets/facebook.svg) no-repeat center / contain ;
+        -webkit-mask: url(/assets/facebook.svg) no-repeat center / contain ;
+         
+    }
+
+    &__item--twitter {
+        mask: url(/assets/twitter.svg) no-repeat center / contain ;
+        -webkit-mask: url(/assets/twitter.svg) no-repeat center / contain ;  
+    }
+
+    &__item--instagram {
+        mask: url(/assets/instagram.svg) no-repeat center / contain ;
+        -webkit-mask: url(/assets/instagram.svg) no-repeat center / contain ;  
+    }
+
+    &__item--tiktok {
+        mask: url(/assets/tiktok.svg) no-repeat center / contain ;
+        -webkit-mask: url(/assets/tiktok.svg) no-repeat center / contain ;  
+    }
+}
+
+@media screen and (min-width: 768px) { 
+      .footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px;
+        justify-content: space-between;
+      }  
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 64px;
+        justify-content: space-between;
+      }  
+}

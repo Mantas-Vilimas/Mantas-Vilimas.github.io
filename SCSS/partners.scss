@@ -1,0 +1,41 @@
+
+
+.partners {
+    margin-top: 56px;
+    margin-bottom: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 28px;
+    column-gap: 20px;
+
+
+    &__card {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: $dark4;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 31px;
+        line-height: 36px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .partners__card {
+        flex-basis: calc(50% - 10px)
+    }
+    
+    .partners__card--visibility {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .partners {
+        margin-top: 122px;
+        margin-bottom: 122px;
+    }
+}

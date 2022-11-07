@@ -1,0 +1,71 @@
+@import "header";
+@import "variables";
+@import "hero";
+@import "banner";
+@import "partners";
+@import "showcase";
+@import "upsell";
+@import "footer";
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 80px repeat(4, 1fr) 80px;
+    grid-auto-rows: auto;
+    justify-content: center;
+}
+
+header,
+section,
+footer {
+    grid-column: 2 / span 4;
+    margin: 0 auto;
+    max-width: 1320px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .navigation__burger {
+        display: none;
+    }
+
+    .footer__bottom--right {
+        display: block;
+    }
+
+    .upsell::after {
+        display: none;
+    }
+
+    .main-layout {
+        margin-bottom: 72px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .navigation__list {
+        display: none;
+    }
+
+    .main-layout {
+        display: grid;
+        grid-template-columns: 30px repeat(4, 1fr) 30px;
+        grid-auto-rows: auto;
+        margin-top: 30px;
+        margin-bottom: 105px;
+    }
+}
